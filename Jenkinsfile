@@ -3,19 +3,19 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'npm install'
+                bat 'npm install'
             }
         }
 		
 		stage('test') {
             steps {
-                sh 'npm run test'
+                bat 'npm run test'
             }
         }
 		
 		stage('create artifact') {
             steps {
-                sh 'tar czf co2-emission-$BUILD_NUMBER.tar.gz .'
+                bat 'tar czf co2-emission-$BUILD_NUMBER.tar.gz .'
             }
         }
     }
