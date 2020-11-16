@@ -1,0 +1,19 @@
+{
+  "name": "co2-emission-calculator",
+  "version": "1.0.0",
+  "description": "A command-line tool to calculate the Co2 equivalent emitted by a transportation method when travelled certain distance.",
+  "main": "lib/emissionCalculator.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "node ."
+  },
+  "author": "Akansha Pandey",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2",
+    "jest-html-reporter": "^3.1.3"
+  }
+}

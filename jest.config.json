@@ -1,0 +1,16 @@
+{
+    "reporters": [
+        "default",
+        ["./node_modules/jest-html-reporter", {
+            "pageTitle": "Co2 emission calculator test report",
+            "outputPath": "unit-tests-reports/test-report.html",
+            "includeFailureMsg": true
+        }]
+    ],
+    "coverageDirectory": "unit-tests-reports/coverage",
+    "coverageReporters": [
+        "html",
+        "text-summary",
+        "lcov"
+    ]
+}
