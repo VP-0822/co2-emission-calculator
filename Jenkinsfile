@@ -15,7 +15,7 @@ pipeline {
 		
 		stage('create artifact') {
             steps {
-                bat 'tar czf co2-emission-$BUILD_NUMBER.tar.gz .'
+                bat 'tar czf co2-emission-${BUILD_NUMBER}.tar.gz .'
             }
         }
     }
